@@ -1,16 +1,11 @@
 //Simple Android TabHost and TabWidget Example
 package edu.kaimbu.collegeapp0;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 import android.widget.TabHost;
-
-import edu.kaimbu.collegeapp0.R;
 
 public class secondPage extends AppCompatActivity {
     TabHost tabHost;
