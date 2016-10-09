@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">CollegeApp0</string>
+
+    <string-array name="cities">
+        <item>New York City</item>
+        <item>Boston</item>
+        <item>Seattle</item>
+        <item>Chicago</item>
+        <item>Los Angeles</item>
+    </string-array>
 </resources>

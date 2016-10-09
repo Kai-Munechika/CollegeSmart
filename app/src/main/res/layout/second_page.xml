@@ -1,4 +1,5 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -7,40 +8,51 @@
     <TabHost
         android:id="@+id/tabHost"
         android:background="#E8F5E9"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true">
-        <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="@+id/constraintLayout3"
+        app:layout_constraintRight_toRightOf="@+id/constraintLayout3"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/constraintLayout3"
+        app:layout_constraintTop_toTopOf="@+id/constraintLayout3">
+
+        <android.support.constraint.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
 
             <TabWidget
                 android:id="@android:id/tabs"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"></TabWidget>
+                android:layout_width="411dp"
+                android:layout_height="wrap_content"
+                tools:layout_editor_absoluteY="0dp"
+                tools:layout_editor_absoluteX="0dp"></TabWidget>
 
 
             <FrameLayout
                 android:id="@android:id/tabcontent"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_width="411dp"
+                android:layout_height="603dp"
+                tools:layout_editor_absoluteY="56dp"
+                tools:layout_editor_absoluteX="0dp">
 
-                <LinearLayout
+                <android.support.constraint.ConstraintLayout
                     android:id="@+id/tab1"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:background="#66BB6A"
-                    android:orientation="vertical">
+                    android:orientation="vertical"
+                    android:weightSum="1">
 
                     <RelativeLayout
-                        android:layout_marginTop="10pt"
-                        android:layout_marginLeft="6pt"
-                        android:layout_marginRight="6pt"
                         android:layout_width="382dp"
                         android:background="#E8F5E9"
-                        android:layout_height="200dp">
+                        android:layout_height="200dp"
+                        tools:layout_editor_absoluteY="52dp"
+                        tools:layout_editor_absoluteX="13dp">
 
 
                         <TextView
@@ -119,7 +131,169 @@
                             android:layout_alignEnd="@+id/textView2"
                             android:textColor="#2E7D32" />
                     </RelativeLayout>
-                </LinearLayout>
+
+                    <TextView
+                        android:text="Cost of Living"
+                        android:textSize="28sp"
+                        android:textColor="@android:color/white"
+                        android:layout_width="411dp"
+                        android:layout_height="38dp"
+                        android:id="@+id/textView8"
+                        android:textAlignment="center"
+                        android:textStyle="normal|bold"
+                        tools:layout_editor_absoluteY="263dp"
+                        tools:layout_editor_absoluteX="0dp" />
+
+                    <Spinner
+                        android:layout_width="411dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/spinner"
+                        tools:layout_editor_absoluteY="301dp"
+                        tools:layout_editor_absoluteX="0dp" />
+
+                    <TextView
+                        android:text="Transportation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView9"
+                        tools:layout_editor_absoluteY="425dp"
+                        tools:layout_editor_absoluteX="73dp"
+                        android:textSize="20sp"
+                        android:textColor="@android:color/white" />
+
+                    <TextView
+                        android:text="Food and Drink"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView13"
+                        tools:layout_editor_absoluteY="490dp"
+                        tools:layout_editor_absoluteX="73dp"
+                        android:textSize="20sp"
+                        android:textColor="@android:color/white" />
+
+                    <TextView
+                        android:text="Average Rent \n1 Bedroom Apt."
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView11"
+                        tools:layout_editor_absoluteY="343dp"
+                        tools:layout_editor_absoluteX="73dp"
+                        android:textSize="20sp"
+                        android:textColor="@android:color/white" />
+
+                    <TextView
+                        android:text="200"
+                        android:textSize="36dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        tools:layout_editor_absoluteY="413dp"
+                        tools:layout_editor_absoluteX="311dp"
+                        android:id="@+id/textView10"
+                        android:textColor="#E8F5E9"
+                        android:textStyle="normal|bold" />
+
+                    <TextView
+                        android:text="700"
+                        android:textSize="36dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        tools:layout_editor_absoluteY="477dp"
+                        tools:layout_editor_absoluteX="310dp"
+                        android:id="@+id/textView14"
+                        android:textColor="#E8F5E9"
+                        android:textStyle="normal|bold" />
+
+                    <TextView
+                        android:text="2080"
+                        android:textSize="36dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        tools:layout_editor_absoluteY="536dp"
+                        tools:layout_editor_absoluteX="171dp"
+                        android:id="@+id/textView12"
+                        android:textColor="#2E7D32"
+                        android:textStyle="normal|bold" />
+
+                    <TextView
+                        android:text="-120"
+                        android:textSize="36dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        tools:layout_editor_absoluteY="536dp"
+                        tools:layout_editor_absoluteX="53dp"
+                        android:id="@+id/textView20"
+                        android:textColor="#2E7D32"
+                        android:textStyle="normal|bold" />
+
+                    <TextView
+                        android:text="2200"
+                        android:textSize="36dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        tools:layout_editor_absoluteY="536dp"
+                        tools:layout_editor_absoluteX="290dp"
+                        android:id="@+id/textView18"
+                        android:textColor="#C8E6C9"
+                        android:textStyle="normal|bold" />
+
+                    <TextView
+                        android:text="-"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        tools:layout_editor_absoluteY="536dp"
+                        tools:layout_editor_absoluteX="264dp"
+                        android:id="@+id/textView17"
+                        android:textStyle="normal|bold"
+                        android:textSize="36sp"
+                        android:textColor="#E8F5E9" />
+
+                    <TextView
+                        android:text="="
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        tools:layout_editor_absoluteY="536dp"
+                        tools:layout_editor_absoluteX="139dp"
+                        android:id="@+id/textView19"
+                        android:textStyle="normal|bold"
+                        android:textSize="36sp"
+                        android:textColor="#E8F5E9" />
+
+                    <TextView
+                        android:text="1300"
+                        android:textSize="36dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        tools:layout_editor_absoluteY="346dp"
+                        tools:layout_editor_absoluteX="290dp"
+                        android:id="@+id/textView16"
+                        android:textColor="#E8F5E9"
+                        android:textStyle="normal|bold" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/transport"
+                        tools:layout_editor_absoluteY="413dp"
+                        tools:layout_editor_absoluteX="17dp"
+                        android:id="@+id/imageView2" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/rent"
+                        android:id="@+id/imageView"
+                        tools:layout_editor_absoluteY="343dp"
+                        tools:layout_editor_absoluteX="17dp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/beer"
+                        tools:layout_editor_absoluteY="482dp"
+                        tools:layout_editor_absoluteX="16dp"
+                        android:id="@+id/imageView3" />
+
+                </android.support.constraint.ConstraintLayout>
 
                 <LinearLayout
                     android:id="@+id/tab2"
@@ -147,7 +321,8 @@
                         android:text="This is tab 3" />
                 </LinearLayout>
             </FrameLayout>
-        </LinearLayout>
+        </android.support.constraint.ConstraintLayout>
     </TabHost>
 
-</LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
