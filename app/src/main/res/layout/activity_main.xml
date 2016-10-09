@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="edu.kaimbu.collegeapp0.MainActivity"
+    android:background="#66BB6A">
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="College Smart"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/white"
+        android:textSize="8.5pt"
+        android:padding="10dp"
+        android:textStyle="bold"
+        />
+
+    <RelativeLayout
+        android:id="@+id/input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:background="#E8F5E9"
+
+        >
+        <TextView
+            android:id="@+id/tuition"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:paddingBottom="2dp"
+            android:paddingTop="5dp"
+            android:textSize="7pt"
+            android:textColor="#000"
+            android:text="One Full Year Tuition"
+            />
+        <TextView
+            android:id="@+id/tuitionDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tuition"
+            android:text="Include room and board, food, textbooks"
+            android:layout_alignLeft="@id/tuition"
+            android:textSize="6pt"
+            />
+        <EditText
+            android:id="@+id/tuitionAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignBaseline="@id/tuition"
+            android:layout_marginRight="10dp"
+            android:hint="ex: $36,000"
+            android:textColorHint="#1B5E20"
+            android:textSize="8pt"
+            android:textColor="#1B5E20"/>
+        <Space
+            android:id="@+id/space01"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_below="@id/tuitionDescription"/>
+
+        <TextView
+            android:id="@+id/finAid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_below="@id/tuitionDescription"
+            android:paddingBottom="2dp"
+            android:paddingTop="5dp"
+            android:textSize="7pt"
+            android:textColor="#000"
+
+            android:text="Estimated Fiancial Aid"
+            />
+        <TextView
+            android:id="@+id/finAidDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/finAid"
+            android:text="Like grants, scholarships\n(money you do not have to pay back)"
+            android:layout_alignLeft="@id/tuition"
+            android:layout_alignStart="@id/tuition"
+            android:textSize="6pt"
+            />
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/tuitionAmount"
+            android:layout_alignBaseline="@id/finAid"
+            android:layout_marginRight="10dp"
+            android:hint="ex: $7,000  "
+            android:textColorHint="#1B5E20"
+            android:textSize="8pt"
+            android:textColor="#1B5E20"/>
+        <Space
+            android:id="@+id/space02"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_below="@id/finAidDescription"/>
+
+
+        <TextView
+            android:id="@+id/studentLoans"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_below="@id/finAidDescription"
+            android:paddingBottom="2dp"
+            android:paddingTop="5dp"
+            android:textSize="7pt"
+            android:textColor="#000"
+            android:text="Estimated Student Loans"
+            />
+        <TextView
+            android:id="@+id/studentLoansDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/studentLoans"
+            android:text="Loans you pay back\nafter graduation"
+            android:layout_alignLeft="@id/tuition"
+            android:layout_alignStart="@id/tuition"
+            android:textSize="6pt"
+            />
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignBaseline="@id/studentLoans"
+            android:layout_marginRight="10dp"
+            android:hint="ex: $17,000"
+            android:textColorHint="#FF8F00"
+            android:textSize="8pt"
+            android:textColor="#FF8F00"/>
+        <Space
+            android:id="@+id/space03"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_below="@id/studentLoansDescription"/>
+
+
+        <TextView
+            android:id="@+id/pocketCost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_below="@id/studentLoansDescription"
+            android:paddingBottom="2dp"
+            android:paddingTop="5dp"
+            android:textSize="7pt"
+            android:textColor="#000"
+            android:text="Out-of-Pocket Cost"
+            />
+        <TextView
+            android:id="@+id/pocketCostDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pocketCost"
+            android:text="On average about 1/3 of tuition"
+            android:layout_alignLeft="@id/tuition"
+            android:layout_alignStart="@id/tuition"
+            android:textSize="6pt"
+            />
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignBaseline="@id/pocketCost"
+            android:layout_marginRight="10dp"
+            android:layout_marginEnd="10dp"
+            android:hint="ex: $12,000"
+            android:textColorHint="#FF8F00"
+            android:textSize="8pt"
+            android:textColor="#FF8F00"/>
+        <Space
+            android:id="@+id/space04"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_below="@id/pocketCostDescription"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/postGrad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Post Graduation"
+        android:textSize="8.5pt"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:padding="10dp"
+        android:layout_below="@+id/input"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/expectedSalaryDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/postGrad"
+        android:layout_centerHorizontal="true"
+        android:text="Average Expected Entry Salary in your field:"
+        android:textColor="@android:color/white" />
+
+
+    <EditText
+        android:id="@+id/expectedSalary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#E8F5E9"
+        android:hint="ex: $48,000"
+        android:textColorHint="#E8F5E9"
+        android:layout_below="@+id/expectedSalaryDescription"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:onClick="calculatePressed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/expectedSalary"
+        android:layout_centerHorizontal="true"
+        android:text="Calculate"
+        android:paddingLeft="55dp"
+        android:paddingRight="55dp"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:textSize="7.5pt"
+        android:backgroundTint="#FF8F00"
+        />
+
+</RelativeLayout>
