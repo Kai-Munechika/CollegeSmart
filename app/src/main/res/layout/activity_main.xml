@@ -63,7 +63,8 @@
             android:hint="ex: $36,000"
             android:textColorHint="#1B5E20"
             android:textSize="8pt"
-            android:textColor="#1B5E20"/>
+            android:textColor="#1B5E20"
+            android:inputType="numberDecimal" />
         <Space
             android:id="@+id/space01"
             android:layout_width="match_parent"
@@ -98,13 +99,17 @@
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignLeft="@id/tuitionAmount"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
             android:layout_alignBaseline="@id/finAid"
             android:layout_marginRight="10dp"
+            android:layout_marginEnd="10dp"
             android:hint="ex: $7,000  "
             android:textColorHint="#1B5E20"
             android:textSize="8pt"
-            android:textColor="#1B5E20"/>
+            android:textColor="#1B5E20"
+            android:inputType="numberDecimal"
+            android:id="@+id/finAidAmount" />
         <Space
             android:id="@+id/space02"
             android:layout_width="match_parent"
@@ -146,7 +151,9 @@
             android:hint="ex: $17,000"
             android:textColorHint="#FF8F00"
             android:textSize="8pt"
-            android:textColor="#FF8F00"/>
+            android:textColor="#FF8F00"
+            android:inputType="numberDecimal"
+            android:id="@+id/loansAmount" />
         <Space
             android:id="@+id/space03"
             android:layout_width="match_parent"
@@ -179,6 +186,7 @@
             android:textSize="6pt"
             />
         <EditText
+            android:id="@+id/pocketCostAmount"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
@@ -189,7 +197,8 @@
             android:hint="ex: $12,000"
             android:textColorHint="#FF8F00"
             android:textSize="8pt"
-            android:textColor="#FF8F00"/>
+            android:textColor="#FF8F00"
+            android:inputType="numberDecimal" />
         <Space
             android:id="@+id/space04"
             android:layout_width="match_parent"
@@ -220,20 +229,21 @@
 
 
     <EditText
-        android:id="@+id/expectedSalary"
+        android:id="@+id/expectedSalaryAmount"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textColor="#E8F5E9"
         android:hint="ex: $48,000"
         android:textColorHint="#E8F5E9"
         android:layout_below="@+id/expectedSalaryDescription"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:inputType="numberSigned|numberDecimal" />
 
     <Button
         android:onClick="calculatePressed"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/expectedSalary"
+        android:layout_below="@id/expectedSalaryAmount"
         android:layout_centerHorizontal="true"
         android:text="Calculate"
         android:paddingLeft="55dp"
@@ -243,6 +253,6 @@
         android:textAllCaps="false"
         android:textSize="7.5pt"
         android:backgroundTint="#FF8F00"
-        />
+        android:id="@+id/button" />
 
 </RelativeLayout>
