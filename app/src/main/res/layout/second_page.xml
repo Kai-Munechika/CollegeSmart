@@ -100,6 +100,7 @@
                             android:layout_alignParentBottom="true"
                             android:layout_alignStart="@+id/textView"
                             android:layout_marginBottom="17dp"
+                            android:paddingBottom="9dp"
                             android:text="Monthly Balance"
                             android:textColor="@android:color/black"
                             android:textSize="18sp" />
@@ -292,7 +293,7 @@
                                 android:layout_alignParentBottom="true"
                                 android:layout_toRightOf="@id/numMinus120"
                                 android:textColor="#E8F5E9"
-                                android:textSize="36sp"
+                                android:textSize="36dp"
                                 android:textStyle="normal|bold"
                                 android:layout_marginBottom="5dp"/>
                             <TextView
@@ -315,7 +316,7 @@
                                 android:layout_marginBottom="5dp"
                                 android:layout_alignParentBottom="true"
                                 android:textColor="#E8F5E9"
-                                android:textSize="36sp"
+                                android:textSize="36dp"
                                 android:textStyle="normal|bold" />
 
                             <TextView
