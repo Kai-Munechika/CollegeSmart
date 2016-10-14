@@ -1,12 +1,11 @@
 package edu.kaimbu.collegeapp0;
 
-import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.EditText;
-import android.widget.Toast;
 
 import static edu.kaimbu.collegeapp0.R.id.expectedSalaryAmount;
 import static edu.kaimbu.collegeapp0.R.id.finAidAmount;
@@ -24,10 +23,10 @@ public class MainActivity extends AppCompatActivity {
 
     public void calculatePressed(View view) {
 
-        final String tuitionAmountString = ((EditText) findViewById(tuitionAmount)).getText().toString();
-        final String finAidAmountString = ((EditText) findViewById(finAidAmount)).getText().toString();
-        final String loansAmountString = ((EditText) findViewById(loansAmount)).getText().toString();
-        final String pocketCostAmountString = ((EditText) findViewById(pocketCostAmount)).getText().toString();
+        final String tuitionAmountString        = ((EditText) findViewById(tuitionAmount)).getText().toString();
+        final String finAidAmountString         = ((EditText) findViewById(finAidAmount)).getText().toString();
+        final String loansAmountString          = ((EditText) findViewById(loansAmount)).getText().toString();
+        final String pocketCostAmountString     = ((EditText) findViewById(pocketCostAmount)).getText().toString();
         final String expectedSalaryAmountString = ((EditText) findViewById(expectedSalaryAmount)).getText().toString();
 
         if (tuitionAmountString.length()               > 0
@@ -50,10 +49,13 @@ public class MainActivity extends AppCompatActivity {
             startActivity(calculate);
         }
         else {
-            Context context = getApplicationContext();
+//            Context context = getApplicationContext();
             CharSequence text = "You must answer all fields.";
-            int duration = Toast.LENGTH_SHORT;
-            Toast.makeText(context, text, duration).show();
+//            int duration = Toast.LENGTH_SHORT;
+//            Toast.makeText(context, text, duration).show();
+
+            Snackbar.make(findViewById(R.id.activity_main), text, Snackbar.LENGTH_SHORT).show();
+
         }
     }
 
