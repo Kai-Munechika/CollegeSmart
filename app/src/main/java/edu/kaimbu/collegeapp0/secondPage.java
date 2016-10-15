@@ -82,8 +82,8 @@ public class secondPage extends AppCompatActivity {
         double rate = 0.07;
         double n    =   12;
         int years   =    5; 		// 10 and 15 for the other tabs
-
-        double loanMath = userEntries[2] * (rate/n) / ( 1 -  Math.pow( ( 1 +  (rate/n) ) , (-n*years)  ) );
+                                      // * 4 to calculate total loans over 4 years
+        double loanMath = userEntries[2] * 4 * (rate/n) / ( 1 -  Math.pow( ( 1 +  (rate/n) ) , (-n*years)  ) );
         monthlyLoanPayment.setText( String.valueOf( (int) loanMath));
 
 
