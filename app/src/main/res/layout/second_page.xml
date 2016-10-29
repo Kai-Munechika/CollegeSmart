@@ -138,6 +138,15 @@
                             android:textSize="28sp"
                             android:textStyle="normal|bold" />
 
+                        <ImageView
+                            android:id="@+id/questions"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/faq"
+                            android:layout_toRightOf="@id/costOfLiving"
+                            android:layout_marginTop="5dp"
+                            />
+
                         <Spinner
                             android:id="@+id/spinner"
                             android:layout_below="@id/costOfLiving"
@@ -265,7 +274,7 @@
                             android:id="@+id/rentText"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Average Rent \n1 Bedroom Apt."
+                            android:text="Average Rent"
                             android:textColor="@android:color/white"
                             android:textSize="20sp"
                             android:layout_below="@+id/spinner"
