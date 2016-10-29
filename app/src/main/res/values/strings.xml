@@ -1,5 +1,6 @@
 <resources>
     <string name="app_name">CollegeApp0</string>
+    <string name="lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla finibus magna ut ligula ullamcorper aliquet. Phasellus varius, mauris quis egestas luctus, enim magna tincidunt dui, quis interdum dui nulla quis erat. Curabitur ullamcorper eros urna, ac placerat ante feugiat ut. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam erat volutpat. Morbi ut ex id lacus suscipit convallis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nam id dapibus nisl. Cras semper turpis mi, vel mollis urna dictum in. Phasellus ex tortor, pharetra id nibh at, convallis pharetra diam. Cras mattis eleifend magna. Aenean interdum, lorem interdum fringilla ornare, est nisi scelerisque tellus, eu posuere sem metus luctus urna. Morbi volutpat aliquet congue. Etiam porta, ante eget tristique congue, enim purus egestas tortor, at feugiat urna velit ut turpis. Ut tristique tristique tellus vitae pretium.</string>
 
     <string-array name="cities">
         <item>New York City</item>

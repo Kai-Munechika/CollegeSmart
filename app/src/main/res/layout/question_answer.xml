@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#66BB6A">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CollegeSmart"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CollegeSmart was designed by college students for college students to help realistically calculate expenses post graduation. When calculating the budget for the 3 major spending categories of rent, transportation, and food we kept in mind the lifestyle a new grad will likely have. The breakdown of each category is listed below."
+        android:textColor="#fff"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="How Monthly Balance Is Calculated"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="The monthly income is calculated by deducting about 28% from your salary earning for the month. This is the average amount of income that gets paid through taxes of some form.
+
+The average loan payment is done based on the formula below where r = 7% (the average rate of interest for a loan) and P is the amount of loans you entered * 4 (for four years of college)."
+        android:textColor="#fff"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="128dp"
+        android:src="@drawable/formula"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="How Average Rent Is Calculated"
+        android:textStyle="bold"
+        android:layout_margin="20dp"
+        android:textColor="#fff"/>
+
+
+</LinearLayout>
