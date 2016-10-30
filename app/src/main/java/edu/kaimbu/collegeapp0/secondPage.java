@@ -6,7 +6,6 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.AdapterView;
-import android.widget.ImageView;
 import android.widget.Spinner;
 import android.widget.TabHost;
 import android.widget.TextView;
@@ -249,20 +248,16 @@ public class secondPage extends AppCompatActivity {
             }
         });
 
-        final ImageView question_1 = (ImageView) findViewById(R.id.questions);
-
-        final Intent qa = new Intent(this, qa.class);
-        question_1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(qa);
-
-
-            }
-        });
 
 
     }
-    
+
+    public void qaPressed (View view){
+        Intent intent = new Intent(this, qa.class);
+        startActivity(intent);
+    }
+
+
+
 
 }

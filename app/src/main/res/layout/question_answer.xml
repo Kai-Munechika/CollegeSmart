@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    >
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#66BB6A">
@@ -39,18 +46,63 @@ The average loan payment is done based on the formula below where r = 7% (the av
         android:layout_marginLeft="15dp"
         android:layout_marginRight="15dp"
         />
+
     <ImageView
+        android:id="@+id/formula"
         android:layout_width="wrap_content"
-        android:layout_height="128dp"
-        android:src="@drawable/formula"
+        android:layout_height="150dp"
+        android:src="@drawable/formula_minn"
         />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="How Average Rent Is Calculated"
         android:textStyle="bold"
-        android:layout_margin="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
         android:textColor="#fff"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Average rent is not the average rent of a one bedroom apartment in those locations. Rather, it is the calculated average rent that an individual pays to live in that city. Most recent college grads will split rent of an apartment among roommates and that number is the one listed as average rent. android:textColor="
+        android:textColor="#fff"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="How Transportation Is Calculated"
+        android:textStyle="bold"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:textColor="#fff"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Transportation is based on the public transportation in those cities and also the considers a taxi ride every now and then for those late nights. Most cities have a monthly subway / bus subscription and the transportation number is largely based off of that."
+        android:textColor="#fff"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="How Food / Drink Is Calculated"
+        android:textStyle="bold"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"        android:textColor="#fff"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Again, with the lifestyle of a new college grad in mind food and drink is based off a diet that is ½ eating out, and ½ eating in. By looking at data for the average meal at a restaurant combined with the cost of groceries per each location, we have come up with the Food and Drink value accordingly."
+        android:textColor="#fff"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        />
 
 
 </LinearLayout>
+
+</ScrollView>

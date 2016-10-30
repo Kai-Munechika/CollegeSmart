@@ -145,6 +145,7 @@
                             android:src="@drawable/faq"
                             android:layout_toRightOf="@id/costOfLiving"
                             android:layout_marginTop="5dp"
+                            android:onClick="qaPressed"
                             />
 
                         <Spinner
