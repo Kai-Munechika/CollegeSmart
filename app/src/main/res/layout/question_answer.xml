@@ -1,108 +1,133 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<ScrollView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_height="match_parent"
-    android:layout_width="match_parent"
-    >
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="#66BB6A">
+    android:layout_width="match_parent">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="CollegeSmart"
-        android:textColor="#fff"
-        android:textStyle="bold"
-        android:layout_marginTop="15dp"
-        android:layout_marginLeft="15dp"
-        />
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="CollegeSmart was designed by college students for college students to help realistically calculate expenses post graduation. When calculating the budget for the 3 major spending categories of rent, transportation, and food we kept in mind the lifestyle a new grad will likely have. The breakdown of each category is listed below."
-        android:textColor="#fff"
-        android:layout_marginLeft="15dp"
-        android:layout_marginRight="15dp"/>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="How Monthly Balance Is Calculated"
-        android:textStyle="bold"
-        android:textColor="#fff"
-        android:layout_marginTop="15dp"
-        android:layout_marginLeft="15dp"
-        />
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="The monthly income is calculated by deducting about 28% from your salary earning for the month. This is the average amount of income that gets paid through taxes of some form.
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#66BB6A">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CollegeSmart"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            android:textSize="18sp"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CollegeSmart was designed by college students for college students to help realistically calculate expenses post graduation. When calculating the budget for the 3 major spending categories of rent, transportation, and food we kept in mind the lifestyle a new grad will likely have. The breakdown of each category is listed below."
+            android:textColor="#fff"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="How Monthly Balance Is Calculated"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            android:textSize="18sp"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="The monthly income is calculated by deducting about 28% from your salary earning for the month. This is the average amount of income that gets paid through taxes of some form.
 
 The average loan payment is done based on the formula below where r = 7% (the average rate of interest for a loan) and P is the amount of loans you entered * 4 (for four years of college)."
-        android:textColor="#fff"
-        android:layout_marginLeft="15dp"
-        android:layout_marginRight="15dp"
-        />
+            android:textColor="#fff"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:textSize="18sp"
+            />
 
-    <ImageView
-        android:id="@+id/formula"
-        android:layout_width="wrap_content"
-        android:layout_height="150dp"
-        android:src="@drawable/formula_minn"
-        />
+        <ImageView
+            android:id="@+id/formula"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:src="@drawable/formula_minn" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="How Average Rent Is Calculated"
-        android:textStyle="bold"
-        android:layout_marginTop="15dp"
-        android:layout_marginLeft="15dp"
-        android:textColor="#fff"/>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Average rent is not the average rent of a one bedroom apartment in those locations. Rather, it is the calculated average rent that an individual pays to live in that city. Most recent college grads will split rent of an apartment among roommates and that number is the one listed as average rent. android:textColor="
-        android:textColor="#fff"
-        android:layout_marginLeft="15dp"
-        android:layout_marginRight="15dp"
-        />
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="How Transportation Is Calculated"
-        android:textStyle="bold"
-        android:layout_marginTop="15dp"
-        android:layout_marginLeft="15dp"
-        android:textColor="#fff"/>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Transportation is based on the public transportation in those cities and also the considers a taxi ride every now and then for those late nights. Most cities have a monthly subway / bus subscription and the transportation number is largely based off of that."
-        android:textColor="#fff"
-        android:layout_marginLeft="15dp"
-        android:layout_marginRight="15dp"
-        />
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="How Food / Drink Is Calculated"
-        android:textStyle="bold"
-        android:layout_marginTop="15dp"
-        android:layout_marginLeft="15dp"        android:textColor="#fff"/>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Again, with the lifestyle of a new college grad in mind food and drink is based off a diet that is ½ eating out, and ½ eating in. By looking at data for the average meal at a restaurant combined with the cost of groceries per each location, we have come up with the Food and Drink value accordingly."
-        android:textColor="#fff"
-        android:layout_marginLeft="15dp"
-        android:layout_marginRight="15dp"
-        />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="\nHow Average Rent Is Calculated"
+            android:textStyle="bold"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Average rent is not the average rent of a one bedroom apartment in those locations. Rather, it is the calculated average rent that an individual pays to live in that city. Most recent college grads will split rent of an apartment among roommates and that number is the one listed as average rent. android:textColor="
+            android:textColor="#fff"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:textSize="18sp"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="How Transportation Is Calculated"
+            android:textStyle="bold"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Transportation is based on the public transportation in those cities and also the considers a taxi ride every now and then for those late nights. Most cities have a monthly subway / bus subscription and the transportation number is largely based off of that."
+            android:textColor="#fff"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:textSize="18sp"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="How Food / Drink Is Calculated"
+            android:textStyle="bold"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Again, with the lifestyle of a new college grad in mind food and drink is based off a diet that is ½ eating out, and ½ eating in. By looking at data for the average meal at a restaurant combined with the cost of groceries per each location, we have come up with the Food and Drink value accordingly.\n\n"
+            android:textColor="#fff"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:textSize="18sp"
+
+            />
 
 
-</LinearLayout>
+    </LinearLayout>
 
 </ScrollView>

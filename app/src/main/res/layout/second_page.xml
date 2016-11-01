@@ -138,16 +138,6 @@
                             android:textSize="28sp"
                             android:textStyle="normal|bold" />
 
-                        <ImageView
-                            android:id="@+id/questions"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:src="@drawable/faq"
-                            android:layout_toRightOf="@id/costOfLiving"
-                            android:layout_marginTop="5dp"
-                            android:onClick="qaPressed"
-                            />
-
                         <Spinner
                             android:id="@+id/spinner"
                             android:layout_below="@id/costOfLiving"
@@ -211,38 +201,6 @@
                             android:textStyle="normal|bold" />
 
 
-
-
-
-                        <TextView
-                            android:id="@+id/foodText"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Food and Drink"
-                            android:textColor="@android:color/white"
-                            android:textSize="20sp"
-                            android:layout_marginLeft="8dp"
-                            android:layout_marginStart="8dp"
-                            android:layout_toRightOf="@+id/beerImage"
-                            android:layout_toEndOf="@+id/beerImage"
-                            android:layout_alignBottom="@id/beerImage"
-                            android:paddingBottom="10dp"
-/>
-                        <TextView
-                            android:id="@+id/transportText"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Transportation"
-                            android:layout_marginLeft="8dp"
-                            android:layout_marginStart="8dp"
-                            android:textColor="@android:color/white"
-                            android:textSize="20sp"
-                            android:paddingBottom="7dp"
-                            android:layout_alignBottom="@+id/transportVal"
-                            android:layout_toRightOf="@+id/transportImage"
-                            android:layout_toEndOf="@+id/transportImage"
-                            />
-
                         <TextView
                             android:id="@+id/foodVal"
                             android:layout_width="wrap_content"
@@ -256,20 +214,6 @@
                             android:layout_below="@+id/transportImage"
                             android:layout_alignParentRight="true"
                             android:layout_alignParentEnd="true" />
-
-                        <TextView
-                            android:id="@+id/rentVal"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="1300"
-                            android:textColor="#E8F5E9"
-                            android:textSize="36dp"
-                            android:textStyle="normal|bold"
-                            android:layout_below="@+id/spinner"
-                            android:layout_alignParentEnd="true"
-                            android:layout_alignParentRight="true"
-                            android:layout_marginRight="26dp"
-                            android:layout_marginEnd="26dp" />
 
                         <TextView
                             android:id="@+id/rentText"
@@ -350,6 +294,56 @@
                                 android:textStyle="normal|bold" />
 
                         </RelativeLayout>
+
+                        <ImageView
+                            android:id="@+id/questions"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/faq"
+                            android:onClick="qaPressed"
+                            android:layout_alignTop="@+id/costOfLiving"
+                            android:layout_toRightOf="@+id/costOfLiving"
+                            android:layout_toEndOf="@+id/costOfLiving" />
+
+                        <TextView
+                            android:id="@+id/transportText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Transportation"
+                            android:textColor="@android:color/white"
+                            android:textSize="20sp"
+                            android:paddingBottom="7dp"
+                            android:layout_alignBaseline="@+id/transportVal"
+                            android:layout_alignBottom="@+id/transportVal"
+                            android:layout_alignRight="@+id/foodText"
+                            android:layout_alignEnd="@+id/foodText" />
+
+                        <TextView
+                            android:id="@+id/foodText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Food and Drink"
+                            android:textColor="@android:color/white"
+                            android:textSize="20sp"
+                            android:layout_marginLeft="11dp"
+                            android:layout_marginStart="11dp"
+                            android:paddingBottom="10dp"
+                            android:layout_alignBaseline="@+id/foodVal"
+                            android:layout_alignBottom="@+id/foodVal"
+                            android:layout_toRightOf="@+id/beerImage"
+                            android:layout_toEndOf="@+id/beerImage" />
+
+                        <TextView
+                            android:id="@+id/rentVal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="1300"
+                            android:textColor="#E8F5E9"
+                            android:textSize="36dp"
+                            android:textStyle="normal|bold"
+                            android:layout_above="@+id/transportVal"
+                            android:layout_alignRight="@+id/transportVal"
+                            android:layout_alignEnd="@+id/transportVal" />
 
                     </RelativeLayout>
 
@@ -474,6 +468,16 @@
                             />
 
                         <ImageView
+                            android:id="@+id/questions_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/faq"
+                            android:onClick="qaPressed"
+                            android:layout_alignTop="@+id/costOfLiving_2"
+                            android:layout_toRightOf="@+id/costOfLiving_2"
+                            android:layout_toEndOf="@+id/costOfLiving_2" />
+
+                        <ImageView
                             android:id="@+id/rentImage_2"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -591,7 +595,7 @@
                             android:id="@+id/rentText_2"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Average Rent \n1 Bedroom Apt."
+                            android:text="Average Rent"
                             android:textColor="@android:color/white"
                             android:textSize="20sp"
                             android:layout_below="@+id/spinner_2"
@@ -790,6 +794,16 @@
                             />
 
                         <ImageView
+                            android:id="@+id/questions_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/faq"
+                            android:onClick="qaPressed"
+                            android:layout_alignTop="@+id/costOfLiving_3"
+                            android:layout_toRightOf="@+id/costOfLiving_3"
+                            android:layout_toEndOf="@+id/costOfLiving_3" />
+
+                        <ImageView
                             android:id="@+id/rentImage_3"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -907,7 +921,7 @@
                             android:id="@+id/rentText_3"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Average Rent \n1 Bedroom Apt."
+                            android:text="Average Rent"
                             android:textColor="@android:color/white"
                             android:textSize="20sp"
                             android:layout_below="@+id/spinner_3"
