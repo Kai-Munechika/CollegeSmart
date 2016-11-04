@@ -73,9 +73,10 @@ The average loan payment is done based on the formula below where r = 7% (the av
             />
 
         <TextView
+            android:id="@+id/howRentIsCalculated"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Average rent is not the average rent of a one bedroom apartment in those locations. Rather, it is the calculated average rent that an individual pays to live in that city. Most recent college grads will split rent of an apartment among roommates and that number is the one listed as average rent. android:textColor="
+            android:text="Average rent is not the average rent of a one bedroom apartment in those locations. Rather, it is the calculated average rent that an individual pays to live in that city. Most recent college grads will split rent of an apartment among roommates and that number is the one listed as average rent."
             android:textColor="#fff"
             android:layout_marginLeft="15dp"
             android:layout_marginRight="15dp"
